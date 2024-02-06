@@ -1,0 +1,203 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{HOMEWORK 1\\
+}
+
+\author{\IEEEauthorblockN{ Gamboa López Jafet Jeshua}
+\IEEEauthorblockA{\textit{4A} \\
+\textit{Universidad Tecnológica de Tijuana}\\
+Tijuana, México \\
+0322103712@ut-tijuana.edu.mx}
+}
+
+\maketitle
+
+\begin{abstract}
+This document is an explication of what is mobile apps architecture. Also, this document is an explication of what is the mobile operating system and what are the mobile operating system characteristics. And this document shows what the hardware components are for mobile devices.
+\end{abstract}
+
+\begin{IEEEkeywords}
+architecture, device, mobile, operative, system, mobile, characteristics, android, ios, iphone, blackberry, symbian, windows, mobile, hardware
+\end{IEEEkeywords}
+
+\section{Introduction}
+In the world of mobile technology, application architecture plays a crucial role in the creation and operation of mobile applications. The way we design and structure these applications not only impacts their performance and efficiency but also influences the user experience and their ability to adapt to the changing demands of the market.
+In the technological landscape, mobile operating systems take center stage in the daily lives of users with mobile devices. Serving as the foundational engine that drives the functionality of smartphones and tablets, these systems also exert a significant influence on the interaction and performance of such devices.
+Mobile devices have become indispensable companions in our daily lives, and their functionality is intrinsically linked to their hardware components. These physical elements, which form the technological backbone of smartphones and tablets, play a crucial role in the user experience, determining everything from performance to the ability to perform complex tasks.
+
+\section{MOBILE DEVICE ARCHITECTURE}
+
+\subsection{Smartphone Hardware Architecture}
+Today, every modern mobile device uses a System on a Chip (SoC) Architecture with the following 3 primary components:
+\begin{itemize}
+    \item Application processor executing the user's application software with instructions from the middleware and the operating system (OS).
+    \item A baseband (or modem) processor with its own OS components performing baseband radio transmission and reception of audio, video and data.
+    \item Various peripheral devices for the user interface.
+\end{itemize}
+
+\subsection{Smartphone Communication Design}
+
+\subsubsection{Receiver (RX)}
+\begin{itemize}
+    \item The RX hardware (part of the baseband processor) receives incoming signals and generates interrupts for the radio interface in OS (both the radio interface and the OS software run on a baseband or modem processor).
+    \item After the reception, a physical layer handshake takes place. Then the incoming audio, video and data are processed by the modem processor.
+    \item The radio OS components talk to the peripheral device drivers to give the incoming data to the user through the device (display, speaker etc.).
+\end{itemize}
+
+\subsubsection{}
+\begin{itemize}
+    \item The device drivers write the data to be transmitted in the memory, from where the radio OS components collect them (For eg. audio from microphone, or image/video from camera, position from GPS).
+    \item These data are then processed by the modem processor as per the transmission protocol.
+    \item Transmission initiated by the radio interface through transmitted hardware.
+    \item The Subscriber Identifier Module (SIM) plays an important role in reception and transmission.
+\end{itemize}
+
+\subsection{User Application execution in a Smartphone}
+The application processor executes the user applications and related OS programs.
+\begin{itemize}
+    \item Applications such as audio / video codec and players, games, image processing, speech processing, internet browser, text editor, etc.
+    \item Applications which are graphics intensive (the majority) are executed with help from the GPU.
+    \item Modern smartphone handsets have a large volatile memory (SDRAM) 1-2 GB and larger non-volatile storage, typically more than 10 GB.
+    \item Mostly a traditional OS (Linux) is used after being stripped down and optimized for smartphone.
+\end{itemize}
+
+\section{MOBILE OPERATING SYSTEM}
+
+\subsection{What is it?}
+
+A mobile operating system is an operating system that only runs on mobile devices, such as Windows or Linux PCs.
+The mobile operating system are more geared toward wireless connectivity.
+
+\subsection{Five Operating System}
+This are some of the mobile operating system that exists:
+
+
+\subsubsection{Symbian OS}\label{AA}
+It was created through an alliance between Nokia (as the most important), Sony Ericsson, Samsung, Siemens, Benq, Fujitsu, Lenovo, LG, Motorola. This alliance This alliance allowed it at one time to be one of the most used mobile operating system, but is currently rapidly losing users.
+
+\subsubsection{Windows Phone}
+It is an operating system. Compact mobile phone developed by Microsoft, it is based on the core of the Windows CE operating system and has a set of basic applications, currently in version 7.
+It is designed to be aesthetically similar to the desktop versions of Windows.
+
+\subsubsection{Blackberry OS}
+Developed by the Canadian company RIM (Research In Motion) for its devices. The system allows for multitasking and has support for different methods exclusive to RIM.
+
+\subsubsection{iPhone IOS}
+Created by Apple originally for the iPhone, later used in the iPod Touch and iPad. It is a derivative of Mac OS. Almost perfect between hardware and software and the handling of the multi-touch screen.
+
+\subsubsection{Android}
+It is based on Linux originally designed for mobile devices such as smartphones but later modified to be used on tablets, it is currently in development for use on netbooks and PCs. Google is the developer and it was announced in 2007 and launched in 2008.
+
+\subsection{Characteristics}
+\begin{itemize}
+\item Ability to connect to the internet wirelessly. Smartphones are designed for wireless connection hence they have an inbuilt modem. The smartphone OS supports the wireless connection by default.
+
+\item Support radio frequency for telephony communication. Mobile phones were originally designed for telephone voice calls. When other features were added to be basic phone the OS had to consider how the phone can connect using different frequencies. Most frequencies that are used are from 2G, 3G, 4G, or the latest 5G technologies.
+
+\item Offer online application stores. Each operating system has its online platform where developers can upload mobile applications and users can download them for use. Android users have Google App Store while those on Apple have Apple Stores.
+
+\item Global positioning system (GPS). Since smartphones are mobile their OS supports GPS which can be used for location-related applications. This can help users navigate easily on their environment using apps like Google Maps.
+Graphic User Interface (GUI) platform. Smartphones are designed to be used by the general public hence they support the best user-friendly interface GUI. Smartphone OS supports user interactions such as tapping, swiping, and pinching, among others. Also, users can customize their interface to make it more personalized.
+
+\item Low power consumption. Since smartphones are mobile devices they are designed to have batteries that can last long. The mobile operating system is designed to support low power consumption to preserve the life of the device’s battery.
+
+\item Pre-installed applications. Most smartphone manufacturers preinstall the default operating system on their devices alongside other recommended software. Some of these application users may never use them and they are called bloatware since they just fill the storage space of the device. Advanced users can remove bloatware in Android OS.
+
+\item Manage data and network. Smartphones are designed to manage different telephone network providers depending on the region and country. The OSes are designed to be compatible with all available networks and also manage internet data.
+\end{itemize}
+
+\section{MOBILE PHONE HARDWARE COMPONENTS}
+This are the mobile phone hardware components:
+
+\subsection{Central Processing Unit (CPU)}
+The CPU is the brain of the mobile phone, executing
+instructions and processing data. Modern smartphones use
+multi-core processors for better performance and efficiency.
+
+\subsection{Graphics Processing Unit (GPU)}
+The GPU handles graphics rendering, processing visual
+data, and outputting it to the display. Some smartphones have
+a dedicated GPU, while others have a GPU integrated into the
+CPU (SoC).
+
+\subsection{Memory}
+Memory consists of two main types in mobile phones:
+\begin{itemize}
+\item Random Access Memory (RAM). Temporarily stores data
+for running applications and processes, allowing for quick
+access and better multitasking.
+\item Read Only Memory (ROM). Non-volatile storage for
+the operating system, pre-installed applications, and user
+data, also known as internal storage or flash storage.
+\end{itemize}
+
+\subsection{Display}
+The display shows visual output, such as text, images,
+and videos. Display technologies include LCD, OLED, and
+AMOLED, and displays come in various sizes, resolutions,
+and aspect ratios.
+
+\subsection{Battery}
+The battery provides power to the mobile phone, typically
+a rechargeable lithium-ion or lithium-polymer battery. Battery
+capacity is measured in milliampere-hours (mAh), with higher
+capacity batteries offering longer usage times.
+
+\subsection{Camera}
+Smartphones feature multiple cameras, including rear-facing
+primary cameras and front-facing selfie cameras. Camera
+specifications include megapixel count, aperture size, sensor
+type, and additional features like optical image stabilization
+(OIS) and autofocus.
+
+\subsection{Connectivity Components}
+These components enable wireless connections and communication protocols, including:
+\begin{itemize}
+\item Cellular enables voice calls and mobile data connectivity
+(4G, LTE, 5G).
+\item WiFi allows connection to wireless networks for internet
+access.
+\item Bluetooth facilitates short-range wireless communication
+with other devices.
+\item GPS enables location-based services and navigation using
+global positioning satellites.
+\item NFC allows short-range wireless data transfer for contactless payments, pairing devices, or sharing data.
+\end{itemize}
+
+\subsection{Sensors}
+Mobile phones include various sensors that enhance functionality and user experience, such as:
+
+\begin{itemize}
+\item Accelerometer measures acceleration and orientation for
+screen rotation and motion-based controls
+\item Gyroscope detects device rotation and orientation for
+applications like augmented reality and gaming.
+\item Proximity Sensor detects the presence of objects close to
+the device, e.g., turning off the display during a phone
+call when held to the ear.
+\item Ambient Light Sensor measures ambient light levels to
+automatically adjust display brightness.
+\item Finger print Sensor provides biometric authentication for
+security purposes.
+\item Barometer measures atmospheric pressure for altitude and
+weather-related applications.
+\end{itemize}
+
+\begin{thebibliography}{00}
+\bibitem{b1} A. Singh Bailoo, “A quick introduction to smartphone architecture,” Evelta Electronics, 24-Jun-2019.  [Online]. Available: https://evelta.com/blog/a-quick-introduction-to-smartphone-architecture/. [Accessed: 01-Feb-2024].
+\bibitem{b2} G. M, “Features, types, and advantages of mobile operating system,” Know Computing, 26-Sep-2023.  [Online]. Available: https://www.knowcomputing.com/features-types-and-advantages-of-mobile-operating-system/. [Accessed: 15-Jan-2024]  
+\bibitem{b3} L. Castellanos, “Sistemas Operativos Móviles,” DTyOC, 27-Sep-2016.  [Online]. Available: https://dtyoc.com/2016/10/03/sistemas-operativos-moviles/. [Accessed: 15-Jan-2024]  
+\bibitem{b4} TechJunction, “Mobile phone hardware components,” Tech Junction, 30-Apr-2023.  [Online]. Available: https://techjunction.co/tech-question/mobile-phone-hardware-components/. [Accessed: 15-Jan-2024] 
+\end{thebibliography}
+\end{document}
