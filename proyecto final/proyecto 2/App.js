@@ -8,7 +8,7 @@ import NavigationAdmin2 from "./Administrador/Parte2/NavigationAdmin2";
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Para una mejor vista, en cada carpeta de usuarios hay un app distinto con sus screens</Text>
+      <Text>Para una mejor vista, en cada carpeta de usuarios hay un app distinto con sus screens </Text>
       <Text>Cliente</Text>
       <NavigationCliente />
       <Text>Admin 1</Text>
